@@ -102,9 +102,7 @@ class Wallet {
 
 }
 
-
-
-// Wallet class usage and test cases!
+// Example usage and test cases
 const wallet = new Wallet();
 
 try {
