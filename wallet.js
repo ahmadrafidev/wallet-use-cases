@@ -92,7 +92,7 @@ class Wallet {
    * Logs the transaction history for a given user.
    * @param {string} userId - The ID of the user whose transaction history will be logged.
    */
-  getLogTransactionHistory(userId) {
+  logTransactionHistory(userId) {
     try {
       console.log(`Transaction history for ${userId}:`, this.getTransactionHistory(userId));
     } catch (error) {
@@ -166,7 +166,7 @@ try {
   }
 
   // Test Case 11: Get transaction history for an existing spesific user
-  wallet.getLogTransactionHistory('user1');
+  wallet.logTransactionHistory('user1');
 
 } catch (error) {
   console.error('Error:', error.message);
